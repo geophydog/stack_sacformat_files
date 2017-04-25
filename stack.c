@@ -37,8 +37,8 @@ int main(int argc, char *argv[]){
 
     if( argc != 3 ){
         fprintf(stderr,"Usage: stack <sac_list_file> <out_stacked_sac>\n");
-        fprintf(stderr,"       Return sac after stacking inputing files.\n");
-        fprintf(stderr,"              Similar to \"addf\" in Seismic Analysis Code\n");
+        fprintf(stderr,"       Return SAC format file after stacking inputing files.\n");
+        fprintf(stderr,"              Similar to \"addf\" in Seismic Analysis Code.\n");
         fprintf(stderr,"       <sac_list_file>  File containing SAC format files;\n");
         fprintf(stderr,"       <sac_list_file>  Stacking out SAC format file name.\n");
         exit(1);
