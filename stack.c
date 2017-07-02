@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <math.h>
 #include "sacio.h"
 
 
@@ -55,9 +56,12 @@ int main(int argc, char *argv[]){
             sum = (float*) malloc(sizeof(float) * hd.npts);
         }
         count += 1;
-        for ( i = 0; i < hd.npts; i ++ ){
+        if ( isnan(hd.depmax) != 1 ) {
+            for ( i = 0; i < hd.npts; i ++ ){
             sum[i] += data[i];
+            }
         }
+        else continue;
         free(data);
     }
 
