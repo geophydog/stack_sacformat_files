@@ -1,6 +1,6 @@
 ***
 # stack  
-- [x] To stack SAC format files linearly.  
+- To stack SAC format files linearly.  
 ***
 # Usage
 ```
