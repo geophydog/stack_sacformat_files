@@ -55,11 +55,11 @@ int main(int argc, char *argv[]){
         if ( count == 0 ) {
             sum = (float*) malloc(sizeof(float) * hd.npts);
         }
-        count += 1;
         if ( isnan(hd.depmax) != 1 ) {
             for ( i = 0; i < hd.npts; i ++ ){
             sum[i] += data[i];
             }
+            count += 1;
         }
         else continue;
         free(data);
