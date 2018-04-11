@@ -14,7 +14,6 @@ stack listfile out_sac_name
 | parameter | explanation |
 |-----------|-------------|
 | listfile  | file name containing sac format files to be stacked |
-|-----------|-------------|
 |out-sac-name| name of after stacking sac format file |
 
 ***
