@@ -54,22 +54,21 @@ int main(int argc, char *argv[]){
         data = read_sac(ss,&hd);
         if ( count == 0 ) {
             sum = (float*) malloc(sizeof(float) * hd.npts);
+	    for( i = 0; i < hd.npts; i ++ ) sum[i] = 0.;
         }
-        if ( isnan(hd.depmax) != 1 ) {
-            for ( i = 0; i < hd.npts; i ++ ){
-            sum[i] += data[i];
-            }
+        if ( !isnan(data[hd.npts/2]) ) {
+            for ( i = 0; i < hd.npts; i ++ ) sum[i] += data[i];
             count += 1;
         }
         else continue;
-        free(data);
     }
+    fclose(fp); free(data);
+    hd.user0 = count;
 
     for ( i = 0; i < hd.npts; i ++ ){
         sum[i] /= (float)count;
     }
-    write_sac(argv[2],hd,sum);
-    fclose(fp);
+    write_sac(argv[2], hd, sum);
     endtime = clock();
     printf("Stacked out file %s costs %f seconds!\n",argv[2],(endtime-starttime)/CLOCKS_PER_SEC);
     return 0;
