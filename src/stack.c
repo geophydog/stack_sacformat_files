@@ -3,7 +3,7 @@
 /*Author  : xfeng                                */
 /*Mail    : geophydogvon@gmail.com               */
 /*Inst    : NJU                                  */
-/*Time    :Initially coded on Tue 14 Feb 2017    */             */
+/*Time    :Initially coded on Tue 14 Feb 2017    */
 /*************************************************/
 
 #include <stdio.h>
