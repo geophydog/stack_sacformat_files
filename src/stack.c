@@ -3,8 +3,7 @@
 /*Author  : xfeng                                */
 /*Mail    : geophydogvon@gmail.com               */
 /*Inst    : NJU                                  */
-/*Time    :Tue 14 Feb 2017 03:05:02 PM CST       */
-/*This is c programming language!                */
+/*Time    :Initially coded on Tue 14 Feb 2017    */             */
 /*************************************************/
 
 #include <stdio.h>
