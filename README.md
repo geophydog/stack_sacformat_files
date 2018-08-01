@@ -2,6 +2,10 @@
 
 ***
 
+# NOTICE!!! THIS PROGRAM COMES WITH NO WARRANTY, TO THE EXTEND PERMITED BY LAW!
+
+***
+
 # stack  
 - To stack SAC format files linearly. It is similar to "addf" command in Seismic Analysis Code(SAC).
 
